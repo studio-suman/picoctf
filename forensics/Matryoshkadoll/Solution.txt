@@ -1,0 +1,1 @@
+Run binwalk -e doll.jpg till flag is extracted
