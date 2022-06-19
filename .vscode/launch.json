@@ -5,6 +5,19 @@
     "version": "0.2.0",
     "configurations": [
         {
+            "type": "java",
+            "name": "Launch VaultDoor1",
+            "request": "launch",
+            "mainClass": "VaultDoor1",
+            "projectName": "picoctf_33ef40a"
+        },
+        {
+            "type": "java",
+            "name": "Launch Current File",
+            "request": "launch",
+            "mainClass": "${file}"
+        },
+        {
             "name": "Python: Current File",
             "type": "python",
             "request": "launch",

@@ -7,6 +7,7 @@ class VaultDoor1 {
             System.out.print("Enter vault password: ");
 String userInput = scanner.next();
 String input = userInput.substring("picoCTF{".length(),userInput.length()-1);
+System.out.println("Vault password: " + input);
 if (vaultDoor.checkPassword(input)) {
             System.out.println("Access granted.");
 } else {
