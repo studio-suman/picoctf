@@ -3,15 +3,16 @@ import java.util.*;
 class VaultDoor1 {
     public static void main(String args[]) {
         VaultDoor1 vaultDoor = new VaultDoor1();
-        Scanner scanner = new Scanner(System.in);
-        System.out.print("Enter vault password: ");
-	String userInput = scanner.next();
-	String input = userInput.substring("picoCTF{".length(),userInput.length()-1);
-	if (vaultDoor.checkPassword(input)) {
-	    System.out.println("Access granted.");
-	} else {
-	    System.out.println("Access denied!");
-	}
+        try (Scanner scanner = new Scanner(System.in)) {
+            System.out.print("Enter vault password: ");
+String userInput = scanner.next();
+String input = userInput.substring("picoCTF{".length(),userInput.length()-1);
+if (vaultDoor.checkPassword(input)) {
+            System.out.println("Access granted.");
+} else {
+            System.out.println("Access denied!");
+}
+        }
     }
 
     // I came up with a more secure way to check the password without putting
