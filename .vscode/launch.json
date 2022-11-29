@@ -19,7 +19,7 @@
         },
         {
             "name": "Python: Current File",
-            "type": "python",
+            "type": "python3",
             "request": "launch",
             "program": "${file}",
             "console": "integratedTerminal",
