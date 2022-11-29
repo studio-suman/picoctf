@@ -1,0 +1,6 @@
+encrypt:UFJKXQZQUNB
+key: SOLVECRYPTO
+
+cipher type: Vigenère cipher
+
+solution: picoCTF{CRYPTOISFUN}
