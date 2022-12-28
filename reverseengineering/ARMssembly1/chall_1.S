@@ -53,7 +53,7 @@ main:
 	ldr	w0, [x29, 44]
 	bl	func
 	cmp	w0, 0			## check if result is 0, so if result is 0, print You win! 
-	so the result should 1813 converted to hex is 715
+						## so the result should 1813 converted to hex is 715
 	bne	.L4				## if not 0, goto .L4	
 	adrp	x0, .LC0	## load address of .LC0 into x0
 	add	x0, x0, :lo12:.LC0 ## add low 12 bits of address of .LC0 to x0

@@ -64,6 +64,7 @@
         "python.analysis.autoSearchPaths": true,
         "diffEditor.codeLens": true
     },
+    "docker.importCertificates": true,
     "code-runner.runInTerminal": true,
 	"code-runner.executorMap": {
 

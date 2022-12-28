@@ -1,0 +1,5 @@
+Modify the downloaded file based on PNG format
+link >> https://en.wikipedia.org/wiki/Portable_Network_Graphics#/media/File:PNG-Gradient_hex.png
+Any Steg hide Software
+link >> https://www.aperisolve.com/
+picoCTF{wiz4rdry}
