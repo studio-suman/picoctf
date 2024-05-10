@@ -1,0 +1,1 @@
+picoCTF{s3cur3_c0nn3ct10n_8969f7d3}
