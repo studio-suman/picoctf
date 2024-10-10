@@ -1,5 +1,8 @@
 {
     "python.formatting.provider": "autopep8",
     "docker.dockerPath": "/usr/sbin/docker",
-    "docker.importCertificates": true
+    "docker.importCertificates": true,
+    "C_Cpp.inlayHints.parameterNames.enabled": false,
+    "C_Cpp.inlayHints.autoDeclarationTypes.showOnLeft": false,
+    "C_Cpp.debugShortcut": true
 }
