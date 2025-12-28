@@ -4,5 +4,12 @@
     "docker.importCertificates": true,
     "C_Cpp.inlayHints.parameterNames.enabled": false,
     "C_Cpp.inlayHints.autoDeclarationTypes.showOnLeft": false,
-    "C_Cpp.debugShortcut": true
+    "C_Cpp.debugShortcut": true,
+    "python-envs.pythonProjects": [
+        {
+            "path": "",
+            "envManager": "ms-python.python:system",
+            "packageManager": "ms-python.python:pip"
+        }
+    ]
 }
