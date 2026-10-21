@@ -1,0 +1,14 @@
+<+0>:     endbr64 
+<+4>:     push   rbp
+<+5>:     mov    rbp,rsp
+<+8>:     mov    DWORD PTR [rbp-0x4],edi
+<+11>:    mov    QWORD PTR [rbp-0x10],rsi
+<+15>:    mov    eax,0x30
+<+20>:    pop    rbp
+<+21>:    ret
+
+This is a short x86-64 function. `endbr64` marks a valid landing point for an indirect branch on systems using Intel CET control-flow protection. The next two instructions, `push rbp` and `mov rbp, rsp`, save the caller’s frame pointer and establish this function’s stack frame.
+
+The instructions at offsets `+8` and `+11` copy the first two function arguments into stack slots. Under the common x86-64 System V calling convention, those arguments arrive in `edi` and `rsi`; the first is stored as a 32-bit value at `[rbp-0x4]`, and the second as a 64-bit value at `[rbp-0x10]`. The function does not appear to use these saved copies afterward.
+
+`mov eax, 0x30` sets the return value to hexadecimal `0x30`, which is decimal 48. Finally, `pop rbp` restores the caller’s frame pointer, and `ret` returns to the caller.
